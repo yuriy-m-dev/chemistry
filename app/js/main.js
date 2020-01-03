@@ -45,6 +45,18 @@ $(function(){
       return false;
     });  
 
+  /* gamburger */
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+      $('.header-menu').slideToggle();
+    });
+
+  /* header user btn */
+    $('.header-top__menu-btn').on('click', function(){
+      $('.user-box').toggleClass('active');
+      $('.header-top__logo').toggleClass('hide');
+    });
+
   /* Mixitup */
       var mixer = mixitup('.catalog__items-products');
 });
