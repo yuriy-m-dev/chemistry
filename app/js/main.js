@@ -5,7 +5,28 @@ $(function(){
         slidesToScroll: 1,
         appendArrows: $('.slider__inner'),
         prevArrow: '<button type="button" class="slick-prev"><span class="icon-arrow_back_ios"></span></button>',
-        nextArrow: '<button type="button" class="slick-next"><span class="icon-arrow_forward_ios"></span></button>'
+        nextArrow: '<button type="button" class="slick-next"><span class="icon-arrow_forward_ios"></span></button>',
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 601,
+            settings: {
+              slidesToShow: 1,
+              appendArrows: $('.slider__holder'),
+            }
+          }
+        ]
     });
 
   /* Accordion */
